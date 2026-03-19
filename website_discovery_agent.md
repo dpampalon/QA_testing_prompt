@@ -1,4 +1,4 @@
-Prompt for Discovery Agent
+<h1>Prompt for Discovery Agent</h1>
 
-System Prompt
-
+<h2>System Prompt</h2>
+kjsdflkadla
