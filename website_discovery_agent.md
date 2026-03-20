@@ -25,3 +25,21 @@ Mark each item "explicit": true|false to distinguish observed vs inferred rules.
 Output:
 Return one structured JSON object (Schema in Section 4) plus a concise human‑readable summary.
 Keep results focused on test coverage (avoid noise).
+
+<h2>Safety Controls</h2>
+Allow only GET navigations; abort other HTTP methods.
+Deny clicks on controls whose text/aria‑label suggests risk: Delete, Purchase, Pay, Confirm, Submit, Save, Send.
+Crawl depth=2 and page budget=25 by default (configurable).
+Same‑origin by default; include subdomains only if allowed.
+Ignore URLs with action‑like query params (e.g., ?delete=1, ?confirm=1).
+
+<h2>Planning Loop</h2>
+Scope: From the seed URL, enumerate safe links (header, footer, menus, in‑page nav). Respect domain + depth + budget.
+Render: render_page(url) → DOM + screenshot.
+Perception: extract_ui(dom) → collect forms/fields, buttons/links, labels/helpers/errors, components (modals, tables, tabs, toasts, alerts, accordions, pagination, breadcrumbs), and ARIA roles/states.
+Rules & States: Detect required/format rules from attributes (required, pattern, type), labels, asterisks, placeholders, helper/error text. Detect states: loading/empty/invalid/permission/failure/success.
+Navigation & Boundaries: Map entry points, breadcrumbs, tabs, and URL families to infer feature boundaries (mark inferences).
+Test Ideas → Test Cases: For each element/functionality, propose Manual and/or Automation test cases using templates in Section 5; tag automation suitability (determinism, selector stability, data setup).
+Evidence: Attach source.url, selector (if available), and screenshot_anchor for each item.
+Aggregate: Update the output JSON (Section 4).
+Stop: No new areas, or budget/depth reached. Summarize coverage and unknowns.
