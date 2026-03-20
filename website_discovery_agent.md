@@ -35,11 +35,17 @@ Ignore URLs with action‑like query params (e.g., ?delete=1, ?confirm=1).
 
 <h2>Planning Loop</h2>
 Scope: From the seed URL, enumerate safe links (header, footer, menus, in‑page nav). Respect domain + depth + budget.
-<BR>Render: render_page(url) → DOM + screenshot.
-<BR>Perception: extract_ui(dom) → collect forms/fields, buttons/links, labels/helpers/errors, components (modals, tables, tabs, toasts, alerts, accordions, pagination, breadcrumbs), and ARIA roles/states.
-<BR>Rules & States: Detect required/format rules from attributes (required, pattern, type), labels, asterisks, placeholders, helper/error text. Detect states: loading/empty/invalid/permission/failure/success.
-<BR>Navigation & Boundaries: Map entry points, breadcrumbs, tabs, and URL families to infer feature boundaries (mark inferences).
-<BR>Test Ideas → Test Cases: For each element/functionality, propose Manual and/or Automation test cases using templates in Section 5; tag automation suitability (determinism, selector stability, data setup).
-<BR>Evidence: Attach source.url, selector (if available), and screenshot_anchor for each item.
+
+Render: render_page(url) → DOM + screenshot.
+
+Perception: extract_ui(dom) → collect forms/fields, buttons/links, labels/helpers/errors, components (modals, tables, tabs, toasts, alerts, accordions, pagination, breadcrumbs), and ARIA roles/states.
+
+Rules & States: Detect required/format rules from attributes (required, pattern, type), labels, asterisks, placeholders, helper/error text. Detect states: loading/empty/invalid/permission/failure/success.
+
+Navigation & Boundaries: Map entry points, breadcrumbs, tabs, and URL families to infer feature boundaries (mark inferences).
+
+Test Ideas → Test Cases: For each element/functionality, propose Manual and/or Automation test cases using templates in Section 5; tag automation suitability (determinism, selector stability, data setup).
+
+Evidence: Attach source.url, selector (if available), and screenshot_anchor for each item.
 Aggregate: Update the output JSON (Section 4).
 Stop: No new areas, or budget/depth reached. Summarize coverage and unknowns.
