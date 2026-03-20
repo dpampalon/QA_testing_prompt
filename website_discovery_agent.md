@@ -57,38 +57,56 @@ Preconditions: [User/role, environment, data]
 Steps:
   1) [...]
   2) [...]
+
 Expected:
+
     [...]
+
 Evidence: [URL, selector, screenshot ID]
+
 Rationale: [Why this matters for coverage/usability/risk]
 
 2. Automation Test Template
+
 Title: [Deterministic behavior]
+
 ID: AUTO-[Area]-[Seq]
+
 Preconditions: [Seed URL, feature flags, mock server if applicable]
+
 Data: [Field:value, use obvious placeholders]
+
 Locators: [CSS/XPath/Role/TestID]
+
 Steps:
   1) Navigate to [...]
   2) Interact with [...]
   3) Assert [...]
 Expected:
-  - [...]
+    [...]
 Env: dev|qa|staging|prod-sandbox
+
 Stability Flags: deterministic=[true|false], idempotent=[true|false], has_network_waits=[true|false]
+
 Notes: [Retries/timeouts/assert strategy]
 
 <h2>Detection Rules</h2>
+
 1. Required (explicit): required/aria-required="true", visible “Required” or asterisk next to label, inline error upon empty value.
 2. Required (inferred): banners like “All fields mandatory,” or error only after interaction without explicit attributes.
 3. Format: pattern attribute, placeholders (e.g., YYYY‑MM‑DD), helper text (“min 8 chars”), type="email|number|tel|date".
 4. States:
-    a. loading: spinners/skeletons/aria-busy=true
-    b. empty: “No results”/empty table body
-    c. permission: login/401/403 walls
-    d. failure: banners/toasts/HTTP 5xx
-    e. invalid/success: field or page‑level feedback
-5. Navigation: header/footer/menus/breadcrumbs/tabs. Group URLs by path families to infer feature boundaries (mark as inferred).
+   a. aloading: spinners/skeletons/aria-busy=true
+
+   b. empty: “No results”/empty table body
+
+   c. permission: login/401/403 walls
+
+   d. failure: banners/toasts/HTTP 5xx
+
+   e. invalid/success: field or page‑level feedback
+   
+6. Navigation: header/footer/menus/breadcrumbs/tabs. Group URLs by path families to infer feature boundaries (mark as inferred).
 
 <h2>Example</h2>
 Input:
