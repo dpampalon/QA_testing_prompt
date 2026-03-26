@@ -16,6 +16,7 @@ Your task is to analyze the repository and produce a comprehensive, productionâ€
 
 <h2>Input</h2>
 Inputs You Can Use
+
 You may analyze the following from the repository:
 
 Source code (frontend, backend, APIs, services)
