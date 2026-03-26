@@ -58,7 +58,11 @@ Mapped to functionality identified in the repository
 
 Include the Following Test Coverage Types:
 
-Functional tests
+Functional tests:
+
+The test cases must include the login/logout functions
+
+The test cases must include all the other testable functions (navigation, buttons, input fields, links, etc.)
 
 Positive and negative scenarios
 
