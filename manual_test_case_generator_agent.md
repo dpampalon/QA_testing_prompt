@@ -9,7 +9,6 @@ Your task is to generate a complete manual test case document based solely on th
 
 <h2>Analysis Instructions</h2>
 1. Analyze the Repository Thoroughly
-  
   Review:
     
     Source code (frontend, backend, services, APIs)
