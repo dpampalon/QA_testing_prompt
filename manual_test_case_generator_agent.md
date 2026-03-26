@@ -9,39 +9,39 @@ Your task is to generate a complete manual test case document based solely on th
 
 <h2>Analysis Instructions</h2>
 1. Analyze the Repository Thoroughly
-  Review:
+Review:
     
-    Source code (frontend, backend, services, APIs)
+Source code (frontend, backend, services, APIs)
     
-    Configuration files and environment variables
+Configuration files and environment variables
     
-    README / markdown documentation
+README / markdown documentation
     
-    Database schemas and migrations
+Database schemas and migrations
     
-    Business logic, workflows, and validations
+Business logic, workflows, and validations
     
-    Error handling and edge cases
+Error handling and edge cases
 
-  Identify:
+Identify:
     
-    Functional requirements (explicit and implicit)
+Functional requirements (explicit and implicit)
     
-    User roles and permissions
+User roles and permissions
     
-    Inputs, outputs, states, and transitions
+Inputs, outputs, states, and transitions
     
-    External integrations and dependencies
+External integrations and dependencies
 
 2. Assumptions & Gaps
 
 Clearly document:
     
-    Any assumptions made due to missing or ambiguous requirements
+Any assumptions made due to missing or ambiguous requirements
     
-    Areas where behavior is inferred from code
+Areas where behavior is inferred from code
     
-    Known limitations of the analysis
+Known limitations of the analysis
 
 <h2>Test Case Design Requirements</h2>
 
