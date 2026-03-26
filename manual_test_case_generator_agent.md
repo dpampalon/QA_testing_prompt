@@ -187,7 +187,6 @@ Acronyms
 1. Generate Two Files
 
 Microsoft Word document (.docx)
-
 PDF document (.pdf)
 
 2. Formatting Standards
