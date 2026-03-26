@@ -104,72 +104,116 @@ Test type: Manual Testing
 3. Table of Contents
 
 4. Introduction
+
 4.1. Purpose of the document
+
 4.2. Scope of testing
+
 4.3. In-scope and out-of-scope items
 
 5. Application Overview
+
 5.1. High-level system description
+
 5.2. Architecture summary
+
 5.3 User roles
 
 6. Test Strategy Summary
+
 6.1. Test approach
+
 6.2. Test levels covered
+
 6.3. Entry/Exit criteria
 
 7. Detailed Manual Test Cases Organize test cases by module or feature.
+
 Each test case must include:
+
 Test Case ID
+
 Module / Feature
+
 Test Case Title
+
 Description
+
 Preconditions
+
 Test Data
+
 Steps (numbered, detailed)
+
 Expected Result
+
 Actual Result (blank)
+
 Status (blank)
+
 Priority (High / Medium / Low)
+
 Severity (Critical / Major / Minor)
+
 Requirement / Code Reference (file, function, or endpoint)
 
 8. Traceability Matrix
+
 Mapping between:
+
 Features / modules
+
 Test case IDs
+
 Code files or components
 
 9. Risks & Assumptions
 
 10. Appendix
+
 Test data samples
+
 Environment assumptions
+
 Glossary (if needed)
+
 Acronyms
 
 <h2>Output Format Requirements</h2>
 1. Generate Two Files
 
 Microsoft Word document (.docx)
+
 PDF document (.pdf)
 
 2. Formatting Standards
+
 Professional QA documentation style
+
 Clear headings and subheadings
+
 Consistent fonts
+
 Proper numbering for sections and test cases
+
 Table-based formatting for individual test cases
 
 3. File Naming Convention
+
 Manual_Test_Cases_<ProjectName>_v1.0.docx
+
 Manual_Test_Cases_<ProjectName>_v1.0.pdf
 
 <h2>Quality Expectations</h2>
+
 No placeholder text
+
 No generic or vague test cases
+
 Explicit alignment with repository logic
+
 Sufficient depth to be used for real-world test execution
+
 Ready for stakeholder review
 
 <h2>Final Instruction</h2>
