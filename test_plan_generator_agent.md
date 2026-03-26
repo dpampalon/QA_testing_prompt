@@ -17,6 +17,10 @@ Automation frameworks
 
 Security, performance, and accessibility testing
 
+The test plan must include the login/logout functions
+
+The test plan must include all the other testable functions (navigation, buttons, input fields, links, etc.) 
+
 You are provided access to a local repository containing application source code and related artifacts.
 
 Your task is to analyze the repository and produce a comprehensive, production‑ready QA Test Plan suitable for enterprise use.
