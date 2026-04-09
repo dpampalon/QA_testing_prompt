@@ -133,9 +133,10 @@ Consistent fonts
 Proper numbering for sections and test cases
 Table-based formatting for individual test cases
 
-3. File Naming Convention
+3. File Naming Convention and Location
 Manual_Test_Cases_<ProjectName>_v1.0.docx
 Manual_Test_Cases_<ProjectName>_v1.0.pdf
+Place the generated files in the following folder: C:\Users\dominique.pampalon\Documents\QAAI\24htremblant-agentic\AI_Generated_Files\ (if the folder doesn't exist, create it.
 
 <h2>Quality Expectations</h2>
 No placeholder text
